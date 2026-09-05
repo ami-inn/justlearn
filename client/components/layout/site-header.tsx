@@ -1,4 +1,4 @@
-// import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
+import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 import { Bell } from "lucide-react";
 import { Navbar } from "../nav/Navbar";
 import { Button } from "@/components/ui/button";
@@ -19,7 +19,7 @@ export function SiteHeader({ activeHref, className }: SiteHeaderProps) {
       )}
     >
       <Navbar activeHref={activeHref} />
-      {/* <div className="ml-auto flex items-center gap-5">
+      <div className="ml-auto flex items-center gap-5">
         <Show when="signed-in">
           <button
             type="button"
@@ -40,7 +40,7 @@ export function SiteHeader({ activeHref, className }: SiteHeaderProps) {
             <Button size="md">Sign up</Button>
           </SignUpButton>
         </Show>
-      </div> */}
+      </div>
     </header>
   );
 }
