@@ -36,7 +36,7 @@ export function Logo({ size = 28, showWordmark = true, className }: LogoProps) {
           className="font-sans font-bold tracking-tight text-neutral-900"
           style={{ fontSize: size * 0.8, lineHeight: 1 }}
         >
-          Vertex
+          JustLearn
         </span>
       )}
     </span>
