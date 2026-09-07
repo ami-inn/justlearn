@@ -121,3 +121,18 @@ use the claude extension in vscode to assist with implementing the design system
 
 - HOME PAGE IMPLEMENTATION
 - copy the vertex-home.png implement the vertex home page from the attatched ui.
+
+- AUTH IMPLEMENTATION
+- using the clerk for the authentication
+
+- SANITy
+-  sanity is used for managing and querying content efficiently. Implement the sanity integration for content management and retrieval.
+- sanity.config.ts the file is responsible for configuring the sanity client and defining the schema for the content types used in the application. Implement the necessary configurations and schema definitions to enable content management and retrieval through sanity.
+
+analyse the data modeling on the agent md that we mentioned.
+- give the prompt to claude: implement the sanity content model and studio for vertex (course,module,lesson,instructor,category) + the server side read client and data layer.
+
+# Seeding the data
+add the seedjson and vidos jsn seed sanity using the provided seedjson and viesjson files instead of generating new content.use the sanity cli import verify the doucment counts afterward and don not modify the files.
+
+seed prompt: seed sample content in sanity. add a handfull of instructors and categories and atleast 10 different courses with modules and lesssons realated to programming development ai and so on so that the catalog and teh cross course wsearch have real data.keep the realations consistent s oa module equals the sum of its lessons and a course equals the sum of its modules.
