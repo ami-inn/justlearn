@@ -141,3 +141,10 @@ seed prompt: seed sample content in sanity. add a handfull of instructors and ca
 
 # Courses page implementation
 - provide the image and implement a course page as shown in attached ui wired with seeded sanity content
+
+# posthog
+- posthog is used for analytics and tracking user behavior. Implement the posthog integration to track user interactions and events within the application. Use the provided posthog configuration and event tracking setup to capture relevant analytics data for analysis and insights.
+- npx -y @posthog/wizard@latest selfdriving the command to set up posthog in the project. follow the prompts to configure posthog and integrate it with the application.
+
+- Lesson page implementation
+- provide the image and implement a lesson page as shown in attached ui wired with seeded sanity content with the lesson video playing on the page
