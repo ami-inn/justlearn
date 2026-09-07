@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import posthog from "posthog-js";
 
-import { ANALYTICS_EVENTS } from "@/lib/analytics/events";
+import { ANALYTICS_EVENTS } from "@/sanity/lib/analytics/events";
 
 interface LessonViewTrackerProps {
   lessonSlug: string;

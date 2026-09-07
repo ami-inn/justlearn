@@ -8,7 +8,7 @@ import {
   COMPLETION_MILESTONE,
   WATCH_DEPTH_MEASUREMENT,
   WATCH_DEPTH_MILESTONES,
-} from "@/lib/analytics/events";
+} from "@/sanity/lib/analytics/events";
 
 /**
  * How far into the lesson a learner got, estimated from wall-clock time.
