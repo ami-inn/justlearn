@@ -6,19 +6,17 @@ import { Hero } from "@/components/home/hero";
 import { PageFrame } from "@/components/layout/page-frame";
 import { SiteHeader } from "@/components/layout/site-header";
 import { coursesHref } from "@/lib/routes";
-// import { CACHE_TAGS, sanityFetch } from "@/sanity/lib/fetch";
-// import { COURSES_LIST_QUERY } from "@/sanity/lib/queries";
+import { CACHE_TAGS, sanityFetch } from "@/sanity/lib/fetch";
+import { COURSES_LIST_QUERY } from "@/sanity/lib/queries";
 
 /** The section is a preview beside "View all courses", so it shows the first row only. */
 const FEATURED_COURSE_COUNT = 3;
 
 export default async function Home() {
-  // const courses = await sanityFetch({
-  //   query: COURSES_LIST_QUERY,
-  //   tags: [CACHE_TAGS.course, CACHE_TAGS.lesson],
-  // });
-
-  const courses: Array<{ id: string; title: string; description: string }> = [];
+  const courses = await sanityFetch({
+    query: COURSES_LIST_QUERY,
+    tags: [CACHE_TAGS.course, CACHE_TAGS.lesson],
+  });
 
   return (
     <PageFrame>
