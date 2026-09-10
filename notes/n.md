@@ -149,3 +149,10 @@ seed prompt: seed sample content in sanity. add a handfull of instructors and ca
 - Lesson page implementation
 - provide the image and implement a lesson page as shown in attached ui wired with seeded sanity content with the lesson video playing on the page
 - for explanation: explain each generated or modified file for this feature including what changed why it changed how the lesson page reads sanity content how the video is renddered , how notes and resources are displayed and what i sholuld verify before testing donot change any files.
+
+# SEARCH FEATURE
+- the feature is  where you can type plain english and goes through all the videos and matches the metadata of the videos or tags or the title.rather than it goes throught the transcripts of the videos. 
+- for this using sanity context skill and the search context skill.
+- how this works is that your app has already has content in sanity but an ai model doesnt automatically  understand the context of the content, what modules is hwot eh lessons are structured so the job here to teach the agent what contnt is it allowed to see andhow should think about the content.
+- the browser not directly talks to the sanity context the llm or any private api. the browser will send the search query to a server route in the next js application.and then the server route will use the sanity context setup to understand thesanity data set ask the model to search over the right content and return structured results.back to the ui. think of the sanity context as the connection between your app and your sanity content for ai owered retrievel. well use those skills
+- open claude window- implement the intelligent search . connect eh sanity context mcp, the server side search api and the results page (video and lesson results). over courses and lessons
