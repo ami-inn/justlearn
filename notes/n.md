@@ -148,3 +148,4 @@ seed prompt: seed sample content in sanity. add a handfull of instructors and ca
 
 - Lesson page implementation
 - provide the image and implement a lesson page as shown in attached ui wired with seeded sanity content with the lesson video playing on the page
+- for explanation: explain each generated or modified file for this feature including what changed why it changed how the lesson page reads sanity content how the video is renddered , how notes and resources are displayed and what i sholuld verify before testing donot change any files.
