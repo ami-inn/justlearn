@@ -156,3 +156,10 @@ seed prompt: seed sample content in sanity. add a handfull of instructors and ca
 - how this works is that your app has already has content in sanity but an ai model doesnt automatically  understand the context of the content, what modules is hwot eh lessons are structured so the job here to teach the agent what contnt is it allowed to see andhow should think about the content.
 - the browser not directly talks to the sanity context the llm or any private api. the browser will send the search query to a server route in the next js application.and then the server route will use the sanity context setup to understand thesanity data set ask the model to search over the right content and return structured results.back to the ui. think of the sanity context as the connection between your app and your sanity content for ai owered retrievel. well use those skills
 - open claude window- implement the intelligent search . connect eh sanity context mcp, the server side search api and the results page (video and lesson results). over courses and lessons
+
+# TRANSCRIPT FEATURE
+- offline ingestion of the video transcripts and then the ability to search over the transcripts. this is a separate feature from the search feature above. this is more like a transcript search where you can type in a query and it will search over the transcripts of the videos and return the relevant results.
+- a script read the transcript and chapter data  and organise to timestamp chunks and then store in a json file. the json file will be used to search over the transcripts. the transcript search will be implemented in the next js application. the transcript search will be a separate page where you can type in a query and it will search over the transcripts and return the relevant results.
+- implement the offline video ingestion pipeline that buildss the video documets with timestamped transcript chunks and chapter markers. prompt
+
+- 
