@@ -113,6 +113,8 @@ export async function POST(request: NextRequest) {
       return errorResponse(499, "Search was cancelled.");
     }
 
+    console.log(error);
+
     // The message can carry the MCP URL or a provider payload, so it is logged, never returned.
     console.error("[api/search]", error);
 

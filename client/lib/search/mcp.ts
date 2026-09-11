@@ -39,9 +39,10 @@ export function searchMcpUrl() {
 }
 
 function authHeaders() {
-  return { Authorization: `Bearer ${assertEnv("SANITY_API_READ_TOKEN")}` };
+  return {
+    Authorization: `Bearer ${assertEnv("SANITY_ORGANIZATION_API_TOKEN")}`,
+  };
 }
-
 export function createSearchMcpClient(): Promise<MCPClient> {
   return createMCPClient({
     transport: { type: "http", url: searchMcpUrl(), headers: authHeaders() },
