@@ -162,4 +162,24 @@ seed prompt: seed sample content in sanity. add a handfull of instructors and ca
 - a script read the transcript and chapter data  and organise to timestamp chunks and then store in a json file. the json file will be used to search over the transcripts. the transcript search will be implemented in the next js application. the transcript search will be a separate page where you can type in a query and it will search over the transcripts and return the relevant results.
 - implement the offline video ingestion pipeline that buildss the video documets with timestamped transcript chunks and chapter markers. prompt
 
-- 
+# POSTHOG
+add posthog tracking for the features built since the basic setup
+- the search performed with query
+-  search results opened with esult type
+-  video play video
+-  watch depth
+-  resume used
+-  lessons completed
+-  and anything else that you believe is important to track within our application.
+-  
+follow posthog next js best practices for event naming and properties. capture server side where the action is server-side and dont track any perosnlly identifiable content beyond the clerk user id
+
+
+future features
+
+- search show the result . the vertex find the best video moments link the lesson to the timestamp and show the video moment in the search results. this is a future feature that will be implemented in the next phase of the project. this will require a more advanced search algorithm that can understand the context of the video and the lesson and link the search results to the relevant video moments.
+- to describe ai
+- think about what happens when chapters match versus when only the transcript matches. and rememeber the video documents from the ingestion lesson already have everyting you need if you get stuck my exact prompt is in th evideo kit but try yours first
+
+-Upgrade search with two stage timestamp resolution (chapters first, transcript fallback) and on site timestamped playback. Result cards deep link to the lesson page at the matched second and the embedded player seeks to it. prompt 1
+-Tune the search by writing the Context document scope filter and instructions, and shape the system prompt. Use @.claude/skills/dial-your-context and @.claude/skills/shape-your-agent prompt 2
